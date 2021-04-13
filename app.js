@@ -261,11 +261,11 @@ function myjsapp(peerClient) {
             if(options['video'])
                 var txt = "Incoming Video call from : " + peerId;
                 var audio = new Audio('windows_bit.mp3');
-                audio.play()
+                audio.play();
             else
                 var txt = "Incoming Voice call from : " + peerId;
             var audio = new Audio('windows_bit.mp3');
-                audio.play()
+                audio.play();
             $('#callConfirmationModal .peer-name').text(txt)
         },
         closeVideoCall : function () {
