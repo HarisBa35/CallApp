@@ -259,13 +259,9 @@ function myjsapp(peerClient) {
         showIncomingCall : function (peerId, options) {
             $('#callConfirmationModal').modal('show')
             if(options['video'])
-                var txt = "Incoming Video call from : " + peerId;
-                var audio = new Audio('windows_bit.mp3');
-                audio.play();
+                var txt = "Incoming Video call from : " + peerId
             else
-                var txt = "Incoming Voice call from : " + peerId;
-            var audio = new Audio('windows_bit.mp3');
-                audio.play();
+                var txt = "Incoming Voice call from : " + peerId
             $('#callConfirmationModal .peer-name').text(txt)
         },
         closeVideoCall : function () {
