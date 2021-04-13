@@ -121,6 +121,8 @@ peerapp = (function() {
             } else {
                 window.incomingCall = call
                 myapp.showIncomingCall(call.peer, call.options.metadata);
+                var snd = new Audio('windows_bit.mp3');
+                snd.play();
             }
             // }
         });
